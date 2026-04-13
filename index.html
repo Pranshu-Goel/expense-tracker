@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Add Expense</h2>
+
+    <form action="add_expense.php" method="POST">
+        <input type="number" name="amount" placeholder="Amount" required>
+
+        <select name="category">
+            <option>Food</option>
+            <option>Travel</option>
+            <option>Shopping</option>
+            <option>Other</option>
+        </select>
+
+        <input type="text" name="description" placeholder="Description">
+
+        <input type="date" name="date">
+
+        <button type="submit">Add Expense</button>
+    </form>
+
+    <a href="view_expense.php">View Expenses</a>
+</div>
+
+</body>
+</html>
